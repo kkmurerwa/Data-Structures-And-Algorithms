@@ -4,7 +4,36 @@ public class LinkedListsTester {
     public static void main(String[] args) {
         // testSinglyLinkedList();
 
-        testDoublyLinkedList();
+        // testDoublyLinkedList();
+
+        testCircularLinkedList();
+    }
+
+    public static void testCircularLinkedList() {
+        CircularLinkedList<String> linkedList = new CircularLinkedList<String>();
+        linkedList.add("Hello");
+        linkedList.add("World");
+        linkedList.add("How");
+        linkedList.add("is");
+        linkedList.add("Java");
+        linkedList.add("Coming");
+        linkedList.add("Along");
+
+        linkedList.printAll();
+
+        System.out.println("Head should be " + linkedList.tail.next.value);
+
+        System.out.println("\n\n\n");
+        linkedList.addFirst("Greetings Humans");
+        linkedList.printAll();
+
+        System.out.println("\n\n\n");
+        linkedList.removeFirst();
+        linkedList.printAll();
+
+        System.out.println("\n\n\n");
+        linkedList.removeLast();
+        linkedList.printAll();
     }
 
     public static void testDoublyLinkedList() {

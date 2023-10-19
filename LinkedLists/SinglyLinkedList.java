@@ -92,7 +92,7 @@ public class SinglyLinkedList<T> {
         size -= 1;
     }
 
-    public class MyNode {
+    class MyNode {
         MyNode next;
         T value;
 
