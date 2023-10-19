@@ -1,13 +1,36 @@
 package LinkedLists;
 
-import java.util.LinkedList;
-import LinkedLists.SinglyLinkedList.MyNode;
-
 public class LinkedListsTester {
     public static void main(String[] args) {
-        testSinglyLinkedList();
+        // testSinglyLinkedList();
 
-        LinkedList<String> list = new LinkedList<>();
+        testDoublyLinkedList();
+    }
+
+    public static void testDoublyLinkedList() {
+        DoublyLinkedList<String> linkedList = new DoublyLinkedList<String>();
+        linkedList.add("Hello");
+        linkedList.add("World");
+        linkedList.add("How");
+        linkedList.add("is");
+        linkedList.add("Java");
+        linkedList.add("Coming");
+        linkedList.add("Along");
+
+        linkedList.printAllWithNextAndPrevious();
+
+        System.out.println("\n\n\n");
+
+        linkedList.removeFirst();
+        linkedList.printAllWithNextAndPrevious();
+
+        System.out.println("\n\n\n");
+        linkedList.removeLast();
+        linkedList.printAllWithNextAndPrevious();
+
+        System.out.println("\n\n\n");
+        linkedList.remove(3);
+        linkedList.printAllWithNextAndPrevious();
     }
 
     public static void testSinglyLinkedList() {
@@ -40,12 +63,6 @@ public class LinkedListsTester {
         linkedList.removeLast();
         linkedList.printAll();
         System.out.println("Size: " + linkedList.size());
-
-        MyNode first = linkedList.getFirst();
-        System.out.println("First: " + first.value);
-
-        MyNode last = linkedList.getLast();
-        System.out.println("Last: " + last.value);
 
         linkedList.remove(21);
     }
