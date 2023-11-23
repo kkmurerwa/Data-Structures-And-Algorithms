@@ -1,6 +1,24 @@
 package codechallenges;
 import java.util.Stack;
 
+// A string s consisting of the letters A, B, C and D is given. The string can be transformed either
+// by removing a letter A together with an adjacent letter B or by removing a letter C together with
+// an adjacent letter D.
+//
+// Write a function in Java:
+//    class Solution { public String solution (String S); }
+//    that, given a string S consisting of N characters, returns any string that:
+//    • can be obtained from S by repeatedly applying the described transformation, and
+//    • cannot be further transformed.
+//    If at some point there is more than one possible way to transform the string, any of the valid transformations may be chosen.
+//    Examples:
+//    1. Given S = "CBACD", the function may return "C", because one of the possible sequences of h
+//    operations is as follows:
+//      СВА -> CD -> BA
+//    2. Given S = "CABABD" the function may return an empty string, because one possible sequence
+//    of operations is:
+//      В -> AB -> CD
+
 public class ManuInterview {
     public static void println(Object msg) {
         System.out.println(msg);
