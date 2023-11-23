@@ -7,7 +7,7 @@ import java.util.Map;
 // Given an integer array A[], find the number of elements in the array for which A[i] = number of times A[i] occurs 
 // in the array. For example, if A[] = [2,2,4,5,3,3,3] we need to return 2. The number 2 occurs 2 times and 3 occurs 
 // 3 times and hence the answer is 2.
-class Microsoft1 {
+class MicrosoftChallenge {
     public static int solution(int[] input) {
         HashMap<Integer, Integer> map = new HashMap<>();
         
