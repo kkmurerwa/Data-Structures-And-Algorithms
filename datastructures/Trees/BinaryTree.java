@@ -169,20 +169,24 @@ public class BinaryTree {
         }
     }
 
-    public void deleteRecursively(int value, TreeNode node) {
+    public void deleteRecursively(int value, TreeNode node, TreeNode prev) {
         if (node == null) {
-            throw new NullPointerException();
+            return;
         }
 
         if (node.value < value) {
-            deleteRecursively(value, node.left);
+            deleteRecursively(value, node.left, node);
         } else if (node.value > value) {
-            deleteRecursively(value, node.right);
+            deleteRecursively(value, node.right, node);
         } else {
-            
+            if (node.left == null && node.right == null) {
+                // Node has no children
+            } else if ((node.left == null && node.right != null) || (node.left != null && node.right == null)) {
+                // Node has one children
+            } else {
+                // Node has two children
+            }
         }
-
-        throw new NullPointerException();
     }
 
     class TreeNode {

@@ -43,5 +43,10 @@ public class TreeTester {
         System.out.println("Contains Recursively 6: " + binaryTree.containsRecursively(6, binaryTree.root) +  " (should return true)");
         System.out.println("Contains 18: " + binaryTree.containsWithQueue(18) + " (should return false)");
         System.out.println("Contains Recursively 18: " + binaryTree.containsRecursively(18, binaryTree.root) +  " (should return false)");
+
+        System.out.println("\n\n\nDelete Recursively");
+        binaryTree.deleteRecursively(6, binaryTree.root, null);
+        binaryTree.bfsTraversal();
+        System.out.println("\nShould be: 6 4 3 5 7 9\n");
     }
 }
