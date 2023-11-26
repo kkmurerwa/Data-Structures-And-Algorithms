@@ -2,6 +2,7 @@ package codechallenges;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 // Challenge
 // Given an integer array A[], find the number of elements in the array for which A[i] = number of times A[i] occurs 
@@ -19,7 +20,7 @@ class MicrosoftChallenge {
 
         int res = 0;
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getKey() == entry.getValue()) {
+            if (Objects.equals(entry.getKey(), entry.getValue())) {
                 res += 1;
             }
         }
