@@ -96,7 +96,7 @@ public class TicTacToe {
     }
 
     public static void startGame() {
-        System.out.println("Game started");
+        println("Game started");
         boolean gameComplete = false;
         turn = 1;
         int roundsPlayed = 0;
