@@ -1,4 +1,4 @@
-package codechallenges
+package codechallenges.interviews.kopokopo
 
 import kotlin.math.pow
 
