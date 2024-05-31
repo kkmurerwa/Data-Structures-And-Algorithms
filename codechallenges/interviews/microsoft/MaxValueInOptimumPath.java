@@ -1,8 +1,6 @@
 package codechallenges.interviews.microsoft;
 
-import java.util.Arrays;
-
-public class MaxValueInOptimumPathMicrosoftInterview {
+public class MaxValueInOptimumPath {
     public static void main(String[] args) {
         System.out.println("Task 2: Microsoft Interview");
 

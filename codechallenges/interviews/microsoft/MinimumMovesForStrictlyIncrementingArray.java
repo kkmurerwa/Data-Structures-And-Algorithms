@@ -1,7 +1,8 @@
 package codechallenges.interviews.microsoft;
 
 /**
- * You are given an array A of N positive integers. In one move, you can pick a segment (a contiguous fragment) of A and a positive integer X and then increase all elements within that segment by X.
+ * You are given an array A of N positive integers. In one move, you can pick a segment (a contiguous fragment) of A
+ * and a positive integer X and then increase all elements within that segment by X.
  * An array is strictly increasing if each element (except for the last one) is smaller than the next element.
  * Write a function:
  * class Solution i public int solution(int[] A); }
